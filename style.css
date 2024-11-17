@@ -1,0 +1,79 @@
+*::-webkit-scrollbar {display:none}
+/* Rooms Dropdown CSS */
+.overlay1 {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.5s;
+  }
+
+  .overlay1-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .overlay1 a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #222;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay1 a:hover,
+  .overlay1 a:focus {
+    color: #ff9800;
+  }
+
+  .overlay1 .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 45px;
+    font-size: 60px;
+    z-index: 10;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay1 {
+      overflow-y: auto;
+    }
+
+    .overlay1 a {
+      font-size: 20px
+    }
+
+    .overlay1 .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+
+/* Tabs CSS */
+
+/* Style the tab content */
+.tabcontent {
+display: none;
+-webkit-animation: fadeEffect 1s;
+animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+from {opacity: 0;}
+to {opacity: 1;}
+}
